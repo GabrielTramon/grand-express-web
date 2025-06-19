@@ -1,0 +1,16 @@
+import Banner from "@/components/banner";
+import BoxCompany from "@/components/boxCompany";
+import ContactComponent from "@/components/contact";
+import Services from "@/components/services";
+
+
+export default function Home() {
+  return (
+    <>
+      <Banner />
+      <BoxCompany />
+      <Services/>
+      <ContactComponent/>
+    </>
+  )
+}
