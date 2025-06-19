@@ -11,19 +11,16 @@ export default function NavBar() {
   return (
     <nav className="bg-white shadow-2xs w-full">
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
-        {/* Logo */}
-        <div className="mt-3">
+        <div className="mt-3 w-full flex justify-center md:justify-start">
           <Image src="/logo.png" alt="logo" width={160} height={80} />
         </div>
 
-        {/* Botão Mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
-        {/* Menu - Desktop */}
         <ul className="hidden md:flex gap-8">
           <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
           <li><Link href="/contact" className="hover:text-orange-600">Contact</Link></li>

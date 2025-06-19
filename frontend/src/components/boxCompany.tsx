@@ -4,7 +4,7 @@ export default function BoxCompany() {
   return (
     <section className="mt-12 px-4">
       {/* TÍTULO CENTRALIZADO */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">Empresas Parceiras</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">Corporate partners</h1>
 
       {/* CONTAINER COM AS 3 BOXES */}
       <div className="flex flex-wrap justify-center gap-10">
@@ -27,7 +27,7 @@ export default function BoxCompany() {
           rel="noopener noreferrer"
         >
           <div className="flex flex-col items-center bg-white p-5 rounded-2xl shadow-2xl border-2 border-gray-300 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:text-orange-600 w-72">
-            <Image alt="Hopeless Botanics Logo" src="/hopelesLogo.png" width={200} height={100} />
+            <Image alt="Hopeless Botanics Logo" src="/hopeless-logo.png" width={200} height={100} />
             <h3 className="text-2xl font-semibold mt-5 text-center">Hopeless Botanics</h3>
           </div>
         </a>
