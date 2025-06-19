@@ -11,13 +11,13 @@ export default function NavBar(){
                 </div>
                     <ul className="flex gap-8 ml-auto mr-26">
                         <li>
-                        <link href="/" className="hover:text-orange-600">Home</link>
+                        <Link href="/" className="hover:text-orange-600">Home</Link>
                         </li>
                         <li>
-                        <link href="contact" className="hover:text-orange-600">Contact</link>
+                        <Link href="contact" className="hover:text-orange-600">Contact</Link>
                         </li>
                         <li>
-                        <link href="about" className="hover:text-orange-600">About</link>
+                        <Link href="about" className="hover:text-orange-600">About</Link>
                         </li>
                     </ul>
             </nav>
