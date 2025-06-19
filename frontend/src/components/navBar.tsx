@@ -1,26 +1,44 @@
-import Image from "next/image"
-import logo from "../assets/logo.png"
-import Link from 'next/link'
+'use client'
 
-export default function NavBar(){
-    return(
-        <>
-            <nav className="flex bg-white shadow-2xs w-full h-20 items-center">
-                <div className="ml-26 mt-3">
-                    <Image src={logo} alt="logo" width={160}></Image>
-                </div>
-                    <ul className="flex gap-8 ml-auto mr-26">
-                        <li>
-                        <Link href="/" className="hover:text-orange-600">Home</Link>
-                        </li>
-                        <li>
-                        <Link href="contact" className="hover:text-orange-600">Contact</Link>
-                        </li>
-                        <li>
-                        <Link href="about" className="hover:text-orange-600">About</Link>
-                        </li>
-                    </ul>
-            </nav>
-        </>
-    )
+import Image from "next/image"
+import Link from 'next/link'
+import { useState } from "react"
+import { Menu, X } from 'lucide-react'
+
+export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <nav className="bg-white shadow-2xs w-full">
+      <div className="flex items-center justify-between h-20 px-4 md:px-10">
+        {/* Logo */}
+        <div className="mt-3">
+          <Image src="/logo.png" alt="logo" width={160} height={80} />
+        </div>
+
+        {/* Botão Mobile */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Menu - Desktop */}
+        <ul className="hidden md:flex gap-8">
+          <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
+          <li><Link href="/contact" className="hover:text-orange-600">Contact</Link></li>
+          <li><Link href="/about" className="hover:text-orange-600">About</Link></li>
+        </ul>
+      </div>
+
+      {/* Menu - Mobile */}
+      {isOpen && (
+        <ul className="md:hidden flex flex-col items-center gap-4 pb-4">
+          <li><Link href="/" className="hover:text-orange-600" onClick={() => setIsOpen(false)}>Home</Link></li>
+          <li><Link href="/contact" className="hover:text-orange-600" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link href="/about" className="hover:text-orange-600" onClick={() => setIsOpen(false)}>About</Link></li>
+        </ul>
+      )}
+    </nav>
+  )
 }
