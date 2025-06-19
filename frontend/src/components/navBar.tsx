@@ -1,5 +1,6 @@
 import Image from "next/image"
 import logo from "../assets/logo.png"
+import Link from 'next/link'
 
 export default function NavBar(){
     return(
@@ -10,13 +11,13 @@ export default function NavBar(){
                 </div>
                     <ul className="flex gap-8 ml-auto mr-26">
                         <li>
-                        <a href="/" className="hover:text-orange-600">Home</a>
+                        <link href="/" className="hover:text-orange-600">Home</link>
                         </li>
                         <li>
-                        <a href="contact" className="hover:text-orange-600">Contact</a>
+                        <link href="contact" className="hover:text-orange-600">Contact</link>
                         </li>
                         <li>
-                        <a href="about" className="hover:text-orange-600">About</a>
+                        <link href="about" className="hover:text-orange-600">About</link>
                         </li>
                     </ul>
             </nav>
