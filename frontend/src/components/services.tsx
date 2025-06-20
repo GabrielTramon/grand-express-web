@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <section className="w-full bg-gray-200 mt-12 border-y-2 border-gray-300 py-10 px-4">
+    <section id="services" className="w-full bg-gray-200 mt-12 border-y-2 border-gray-300 py-10 px-4">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">Services</h1>
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         <div className="flex flex-col bg-white p-6 rounded-xl shadow-md text-center">

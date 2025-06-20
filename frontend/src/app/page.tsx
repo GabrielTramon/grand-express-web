@@ -1,3 +1,4 @@
+import About from "@/components/about";
 import Banner from "@/components/banner";
 import BoxCompany from "@/components/boxCompany";
 import ContactComponent from "@/components/contact";
@@ -8,8 +9,9 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <BoxCompany />
       <Services/>
+      <BoxCompany />
+      <About/>
       <ContactComponent/>
     </>
   )

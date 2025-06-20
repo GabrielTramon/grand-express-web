@@ -2,8 +2,8 @@ import { Mail, MessageCircle } from "lucide-react";
 
 export default function ContactComponent() {
   return (
-    <section className="w-full py-16 px-4">
-      <div className="max-w-xl mx-auto bg-white p-10 rounded-2xl shadow-2xl text-center">
+    <section id="contact" className="w-full py-16 px-4">
+      <div className="max-w-xl mx-auto bg-white p-10 rounded-2xl shadow-2xl text-center border-2 border-gray-200">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Entre em Contato</h1>
         <p className="text-gray-600 text-lg mb-8">
           Estamos disponíveis para tirar dúvidas, receber sugestões ou ajudar com seu pedido.
