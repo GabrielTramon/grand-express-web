@@ -19,7 +19,7 @@ export default function Banner() {
         {/* Banner para mobile */}
         <div className="block md:hidden">
           <Image
-            src="/banner2.png"
+            src="/bannerMobile.png"
             alt="Banner Mobile"
             className="w-full h-auto object-cover rounded-2xl"
             priority

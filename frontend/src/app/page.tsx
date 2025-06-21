@@ -12,8 +12,8 @@ export default function Home() {
       <Banner />
       <BoxCompany />
       <Location/>
-      <About/>
       <Services/>
+      <About/>
       <ContactComponent/>
     </>
   )

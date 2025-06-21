@@ -4,26 +4,24 @@ import Image from 'next/image'
 
 export default function Location(){
     return(
-           <section id="" className="w-full bg-amber-950 py-16 px-6 md:px-12mt mt-12">
+           <section id="" className="w-full bg-zinc-50 py-16 px-6 md:px-12mt mt-12">
               <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="/dublinMap.png" // coloque sua imagem na pasta public
                     alt="Equipe trabalhando junta"
-                    width={1500}
-                    height={500}
+                    width={660}
+                    height={479}
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div>
-                  <h2 className="text-5xl font-extrabold text-amber-100 mb-6">Location</h2>
-                  <p className="text-lg text-amber-100 leading-relaxed">
-                    Na <span className="font-semibold text-white">GrandExpress</span>, oferecemos soluções modernas com foco em excelência,
-                    transparência e experiência do cliente. Nossa equipe é apaixonada
-                    por inovação e comprometida com resultados reais. Estamos aqui para
-                    transformar sua ideia em realidade com dedicação e confiança.
-                  </p>
-                </div>
+                    <div>
+                        <h2 className="text-5xl font-extrabold text-amber-950 mb-6">Delivery Area</h2>
+                        <p className="text-lg text-amber-950 leading-relaxed">
+                            We deliver quickly and safely across Dublin, covering all main areas from Dublin 1 to 24, including Clondalkin, Tallaght, Blanchardstown, Swords, Lucan, and more.
+                            Our optimized routes ensure fast service in both central and surrounding regions.
+                        </p>
+                    </div>
               </div>
             </section>
     )
