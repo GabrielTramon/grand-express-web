@@ -22,17 +22,15 @@ export default function NavBar() {
         </div>
 
         <ul className="hidden md:flex gap-8">
-          <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
-          <li><Link href="#contact" className="hover:text-orange-600">Contact</Link></li>
-          <li><Link href="#about" className="hover:text-orange-600">About</Link></li>
           <li><Link href="#services" className="hover:text-orange-600">Services</Link></li>
+          <li><Link href="#about" className="hover:text-orange-600">About</Link></li>
+          <li><Link href="#contact" className="hover:text-orange-600">Contact</Link></li>
         </ul>
       </div>
 
       {/* Menu - Mobile */}
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 pb-4">
-          <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
           <li><Link href="#contact" className="hover:text-orange-600">Contact</Link></li>
           <li><Link href="#about" className="hover:text-orange-600">About</Link></li>
           <li><Link href="#services" className="hover:text-orange-600">Services</Link></li>
