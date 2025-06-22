@@ -6,7 +6,7 @@ export default function ContactComponent() {
       <div className="max-w-xl mx-auto bg-white p-10 rounded-2xl shadow-2xl text-center border-2 border-gray-200">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Get in Touch</h1>
         <p className="text-gray-600 text-lg mb-8">
-          We're available to answer questions, receive suggestions, or help with your request.
+          We&apos;re available to answer questions, receive suggestions, or help with your request.
         </p>
 
         <div className="flex flex-col gap-4 items-center">
